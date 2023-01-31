@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+body{ 
+    background: linear-gradient(rgba(0, 0, 0, 85%),black );
+}
+
+
+/*encabezado y nav y redes*/
+
+header{
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+    
+
+a  {
+    text-decoration: none;
+   text-align: center;
+   margin: 26px;
+   font-size: 30px;      
+}
+
+.fa-brands.fa-square-facebook{
+    color: white;
+    transform: scale(1);
+}
+    
+.fa-brands.fa-square-facebook:hover{
+    color: #1A237E;
+    text-shadow: 0 0 5px white, 0 0 10px white,0 0 40px #1A237E;
+    transform: scale(1.2);
+    transition: 0.3s;}
+
+.fa-brands.fa-square-instagram{
+    color: white;
+}
+
+.fa-brands.fa-square-instagram:hover { 
+    color: #B71C1C;
+    text-shadow: 0 0 5px white,0 0 10px white, 0 0 20px red ;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.fa-brands.fa-linkedin{
+    color: white;
+    transform: scale(1);
+}
+
+.fa-brands.fa-linkedin:hover {
+    color: #2E86C1;
+    text-shadow: 0 0 5px white,0 0 10px white, 0 0 5px #2E86C1 ;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+
+
+/*Edicion foto y titulos principal*/
+
+h2, h3 {
+    font-weight: 100;
+}
+
+.cv {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.cv h1 {
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 100;
+}
+
+.imgcv{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fotocv{
+    border: 5px solid #263238;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.datoscv{
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+
+/* Section habilidades*/
+
+.mitad {
+    opacity: 0;
+}
+
+.aparece-mitad{
+    opacity: 1;
+    transition: 5.5s;
+}
+
+.datos-personales {
+    margin-top: 120px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.habilidades { 
+    opacity: 0;
+    margin-top: 150px;
+    text-align: center;
+    transition: all 4s;
+}
+
+.habilidades p{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.tecnologias {
+    margin-top: 25px;
+}
+.tecnologias img {
+    width: 80px;
+    height: 80px;
+}
+
+.aparece-habilidades{
+    opacity: 1;
+    transform: translateY(-40%);
+}
+
+
+
+
+.datos1{
+    display: flex;
+    color: white;
+    width: 80%;
+    margin: 140px auto;
+    display: flex;
+    border-spacing: 150px;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: circle;
+    
+    
+}
+
+/*section contacto*/
+
+.formulario { 
+	padding: 0px;
+	margin-top: 60px;
+	text-align: center;
+	width: 100%;
+    align-items: center;
+}
+
+.contact {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.controles { 
+		font-size: 15px;
+        color: #000000;
+		border: solid 1px #000000 ;
+		margin-bottom: 40px ;
+		background-color :#FDFEFE  ;
+  		width: 50%;
+  		padding: 10px;
+  	}
+
+
+ 
+.boton {
+	background-color: #000000;
+	margin-left: 22%;
+	float: left;
+	font-size: 20px;
+	color: #FDFEFE ; 
+	width:10%; 
+	height: 10vh;}
+
+
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    border-top: 3px solid white;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/*media query responsive desing*/
+
+
+
+@media screen and (max-width:450px) {
+
+    a{
+        font-size: 15px;
+    }
+
+    
+    .cv{
+        font-size: 15px;
+    }
+
+    .datoscv{
+        font-size: 12px;
+    }
+
+    .datos1{
+        margin-top: 20px;
+        font-size: 6px;
+    }
+
+    .fotocv{
+        width: 150px;
+        height: 150px;
+    }
+
+    .habilidades{
+        margin-top: 100px;
+    }
+
+    .habilidades p {
+        font-size: 15px;
+    }
+
+    .datos-personales { 
+        margin-top: 20px;
+    }
+
+    .boton {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
